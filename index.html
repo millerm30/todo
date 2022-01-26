@@ -18,10 +18,17 @@
             <h3>To-Do List</h3>
             <form>
                 <label id="notename">Note Name:</label>
-                <input type="text" placeholder="Please enter note name here">
+                <input type="text" placeholder="Please enter note name here" required>
+                <br>
+                <label for="status">Status:</label>
+                <select name="status" id="status" required>
+                    <option value="todo">To-Do</option>
+                    <option value="progress">In-Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
                 <br>
                 <label id="note">Note:</label>
-                <textarea name="textarea" cols="25" rows="3" placeholder="Please ad your to-do item here!"></textarea>
+                <textarea name="textarea" cols="25" rows="3" placeholder="Please ad your to-do item here!" required></textarea>
                 <br>
                 <input type="button" value="Submit Item" id="button">
                 <input type="reset" value="Reset Item" id="button">
