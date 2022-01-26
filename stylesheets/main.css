@@ -2,4 +2,54 @@
 
 html {
     font-family: 'Sedgwick Ave', cursive, Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.header-content {
+    grid-area: header;
+    background-color: #dadada;
+}
+
+.list-content {
+    grid-area: list;
+    background-color: #dadada;
+}
+
+.weather-content {
+    grid-area: weather;
+    background-color: #dadada;
+}
+
+.todo-content {
+    grid-area: todo;
+    background-color: #dadada;
+}
+
+.inprogress-content {
+    grid-area: progress;
+    background-color: #dadada;
+}
+
+.completed-content {
+    grid-area: complete;
+    background-color: #dadada;
+}
+
+.footer-content {
+    grid-area: footer;
+    background-color: #dadada;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        'header header header header header'
+        'list list list weather weather'
+        'todo progress complete weather weather'
+        'footer footer footer footer footer';
+        gap: 10px;
 }
