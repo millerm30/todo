@@ -12,49 +12,49 @@ html {
 
 .header-content {
     grid-area: header;
-    background-color: #ff7b00;
+    background-color: #4267B3;
     padding: 10px;
-    border-radius: 20px;    
+    border-radius: 20px;
 }
 
 .list-content {
     grid-area: list;
-    background-color: #dadada;
+    background-color: #E9EbEE;
     padding: 10px;
     border-radius: 20px;
 }
 
 .weather-content {
     grid-area: weather;
-    background-color: #dadada;
+    background-color: #E9EbEE;
     padding: 10px;
     border-radius: 20px;
 }
 
 .todo-content {
     grid-area: todo;
-    background-color: #dadada;
+    background-color: #E9EbEE;
     padding: 10px;
     border-radius: 20px;
 }
 
 .inprogress-content {
     grid-area: progress;
-    background-color: #dadada;
+    background-color: #E9EbEE;
     padding: 10px;
     border-radius: 20px;
 }
 
 .completed-content {
     grid-area: complete;
-    background-color: #dadada;
+    background-color: #E9EbEE;
     padding: 10px;
     border-radius: 20px;
 }
 
 .footer-content {
     grid-area: footer;
-    background-color: #dadada;
+    background-color: #4267B3;
     padding: 10px;
     border-radius: 20px;
 }
@@ -76,6 +76,7 @@ body {
 .header-content h1 {
     font-size: 44px;
     text-align: center;
+    color: #fff;
 }
 
 /* List Interior Settings */
@@ -170,6 +171,7 @@ textarea {
 
 .footer-content p {
     text-align: center;
+    color: #fff;
 }
 
 /* @Media Inquires */
