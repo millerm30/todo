@@ -68,14 +68,14 @@ body {
     gap: 10px;
 }
 
-/* Header interior Settings */
+/* Header Interior Settings */
 
 .header-content h1 {
     text-align: center;
     font-size: 44px;
 }
 
-/* List interior Settings */
+/* List Interior Settings */
 
 .list-content h3 {
     text-align: center;
@@ -84,5 +84,33 @@ body {
 /* Weather App Settings */
 
 .weather-content h3 {
+    text-align: center;
+}
+
+.weather-content p {
+    text-align: center;
+}
+
+/* To-Do Interior Settings */
+
+.todo-content h3 {
+    text-align: center;
+}
+
+/* In-Progress Interior Settings */
+
+.inprogress-content h3 {
+    text-align: center;
+}
+
+/* Completed Interior Settings */
+
+.completed-content h3 {
+    text-align: center;
+}
+
+/* Footer Interior Settings */
+
+.footer-content p {
     text-align: center;
 }
