@@ -9,47 +9,80 @@ html {
 .header-content {
     grid-area: header;
     background-color: #dadada;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .list-content {
     grid-area: list;
     background-color: #dadada;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .weather-content {
     grid-area: weather;
     background-color: #dadada;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .todo-content {
     grid-area: todo;
     background-color: #dadada;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .inprogress-content {
     grid-area: progress;
     background-color: #dadada;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .completed-content {
     grid-area: complete;
     background-color: #dadada;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .footer-content {
     grid-area: footer;
     background-color: #dadada;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 
 body {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 140px 1fr 1fr 60px;
     grid-template-areas: 
         'header header header header header'
         'list list list weather weather'
         'todo progress complete weather weather'
         'footer footer footer footer footer';
-        gap: 10px;
+    gap: 10px;
+}
+
+/* Header interior Settings */
+
+.header-content h1 {
+    text-align: center;
+    font-size: 44px;
+}
+
+/* List interior Settings */
+
+.list-content h3 {
+    text-align: center;
+}
+
+/* Weather App Settings */
+
+.weather-content h3 {
+    text-align: center;
 }
