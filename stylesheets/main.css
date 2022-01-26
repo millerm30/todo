@@ -1,16 +1,20 @@
 /* General Page Setup and Grid Layout */
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Sedgwick Ave', cursive, Arial, Helvetica, sans-serif;
     margin: 0 auto;
-    width: 90%;
+    max-width: 960px;
 }
 
 .header-content {
     grid-area: header;
-    background-color: #dadada;
+    background-color: #ff7b00;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 20px;    
 }
 
 .list-content {
@@ -55,30 +59,70 @@ html {
     border-radius: 20px;
 }
 
-
 body {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 140px 1fr 1fr 60px;
     grid-template-areas: 
-        'header header header header header'
-        'list list list weather weather'
-        'todo progress complete weather weather'
-        'footer footer footer footer footer';
-    gap: 10px;
+        'header header header'
+        'list list weather'
+        'todo progress complete'
+        'footer footer footer';
+    gap: 5px;
 }
 
 /* Header Interior Settings */
 
 .header-content h1 {
-    text-align: center;
     font-size: 44px;
+    text-align: center;
 }
 
 /* List Interior Settings */
 
 .list-content h3 {
     text-align: center;
+}
+
+/* Form Settings */
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 5px 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+#status {
+    padding: 5px 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    text-align: right;
+}
+
+#note_name {
+    padding: 5px 10px;
+    margin: 8px 0;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+#button {
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    height: 28px;
 }
 
 /* Weather App Settings */
@@ -113,4 +157,19 @@ body {
 
 .footer-content p {
     text-align: center;
+}
+
+/* @Media Inquires */
+
+@media screen and (max-width: 600px) {
+    body { 
+    grid-template-areas: 
+        'header header header'
+        'list list list'
+        'weather weather weather'
+        'todo todo todo'
+        'progress progress progress'
+        'complete complete complete'
+        'footer footer footer';
+    }
 }
