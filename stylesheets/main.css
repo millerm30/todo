@@ -115,14 +115,6 @@ textarea {
     resize: none;
 }
 
-#status {
-    padding: 5px 10px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    background-color: #f8f8f8;
-    text-align: right;
-}
-
 #note_name {
     padding: 5px 10px;
     margin: 8px 0;
