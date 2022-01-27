@@ -88,6 +88,7 @@ body {
     color: #ffae00;
     vertical-align: super;
     font-size: 22px;
+    font-style: italic;
 }
 
 .note-logo {
@@ -127,7 +128,7 @@ textarea {
     float: right;
     text-align: center;
     vertical-align: middle;
-    padding: 5px 10px;
+    padding: 0px 10px;
     cursor: pointer;
     margin: 5px;
     background-color: #f8f8f8;
@@ -140,7 +141,7 @@ textarea {
     float: right;
     text-align: center;
     vertical-align: middle;
-    padding: 5px 10px;
+    padding: 0px 10px;
     cursor: pointer;
     margin: 5px;
     background-color: #f8f8f8;
@@ -176,7 +177,7 @@ textarea {
 .todo-content h3 {
     text-align: center;
     border: 3px solid #ccc;
-    padding: 10px;
+    padding: 6px 10px;
     height: 40px;
     border-radius: 10px;
     background-color: #f8f8f8;
@@ -188,7 +189,7 @@ textarea {
     text-align: center;
     text-align: center;
     border: 3px solid #ccc;
-    padding: 10px;
+    padding: 6px 10px;
     height: 40px;
     border-radius: 10px;
     background-color: #f8f8f8;
@@ -200,7 +201,7 @@ textarea {
     text-align: center;
     text-align: center;
     border: 3px solid #ccc;
-    padding: 10px;
+    padding: 6px 10px;
     height: 40px;
     border-radius: 10px;
     background-color: #f8f8f8;
