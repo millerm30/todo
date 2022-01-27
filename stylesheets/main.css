@@ -153,6 +153,14 @@ textarea {
     height: 28px;
 }
 
+#button_submit:hover, 
+#button_reset:hover,
+#note_name:hover,
+#status:hover,
+#textarea:hover {
+    border-color: #4267B3;
+}
+
 /* Weather App Settings */
 
 .weather-content h3 {
@@ -167,18 +175,35 @@ textarea {
 
 .todo-content h3 {
     text-align: center;
+    border: 3px solid #ccc;
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
 }
 
 /* In-Progress Interior Settings */
 
 .inprogress-content h3 {
     text-align: center;
+    text-align: center;
+    border: 3px solid #ccc;
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
 }
 
 /* Completed Interior Settings */
 
 .completed-content h3 {
     text-align: center;
+    text-align: center;
+    border: 3px solid #ccc;
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
 }
 
 /* Footer Interior Settings */
