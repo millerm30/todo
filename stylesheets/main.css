@@ -8,12 +8,14 @@ html {
     font-family: 'Sedgwick Ave', cursive, Arial, Helvetica, sans-serif;
     margin: 0 auto;
     max-width: 960px;
+    background-color: #f4f4f4;
 }
 
 .header-content {
     grid-area: header;
     background-color: #4267B3;
     border-radius: 20px;
+    padding: 10px;
 }
 
 .list-content {
@@ -78,14 +80,20 @@ body {
 }
 
 .app-name h1 {
-    font-size: 42px;
+    font-size: 40px;
     color: #fff;
+}
+
+.app-name .wow sup {
+    color: #ffae00;
+    vertical-align: super;
+    font-size: 22px;
 }
 
 .note-logo {
     width: 80px;
     height: 80px;
-    padding: 15px 0 0 0;
+    margin-right: 5px;
     transform: rotate(20deg);
 }
 
