@@ -13,12 +13,7 @@ html {
 .header-content {
     grid-area: header;
     background-color: #4267B3;
-    
     border-radius: 20px;
-    display: flex;
-    direction: rtl;
-    justify-content: left;
-    vertical-align: middle;
 }
 
 .list-content {
