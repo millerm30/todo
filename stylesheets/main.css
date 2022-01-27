@@ -13,8 +13,12 @@ html {
 .header-content {
     grid-area: header;
     background-color: #4267B3;
-    padding: 10px;
+    
     border-radius: 20px;
+    display: flex;
+    direction: rtl;
+    justify-content: left;
+    vertical-align: middle;
 }
 
 .list-content {
@@ -61,8 +65,7 @@ html {
 
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 140px 1fr 1fr 60px;
+    grid-template: auto;
     grid-template-areas: 
         'header header header'
         'list list weather'
@@ -75,8 +78,19 @@ body {
 
 .header-content h1 {
     font-size: 44px;
-    text-align: center;
     color: #fff;
+}
+
+.header-content h4 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.note-logo {
+    width: 80px;
+    height: 80px;
+    padding: 15px 0 0 0;
+    transform: rotate(20deg);
 }
 
 /* List Interior Settings */
