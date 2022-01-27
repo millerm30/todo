@@ -76,13 +76,14 @@ body {
 
 /* Header Interior Settings */
 
-.header-content h1 {
-    font-size: 44px;
-    color: #fff;
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.header-content h4 {
-    font-size: 18px;
+.app-name h1 {
+    font-size: 42px;
     color: #fff;
 }
 
@@ -167,8 +168,12 @@ textarea {
     text-align: center;
 }
 
-.weather-content p {
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    margin: 0 5px 0 5px;
 }
 
 /* To-Do Interior Settings */
