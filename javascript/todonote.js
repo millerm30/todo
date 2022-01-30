@@ -69,7 +69,7 @@ function displayNotes(){
 		noteEle.innerHTML = html;
 	}
 	else{
-		noteEle.innerHTML = '<h3 style="text-align: center; color: grey;">Nothing to display</h3>';
+		noteEle.innerHTML = '<h3 style="text-align: center; color: grey;">Please Add Item!</h3>';
 	}
 	
 }
