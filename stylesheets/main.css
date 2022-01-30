@@ -224,6 +224,7 @@ textarea {
 }
 
 .my-note {
+    overflow-wrap: break-word;
     width: 100%;
     padding: 0px 10px;
     border: 2px solid #ccc;
