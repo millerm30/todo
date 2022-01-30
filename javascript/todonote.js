@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 displayNotes();
 const addBtn = document.getElementById('button_submit');
