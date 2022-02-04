@@ -30,13 +30,13 @@
                 <label id="note">Note:</label>
                 <textarea name="textarea" id="textarea" cols="25" rows="3" placeholder="Please add your to-do item here!"></textarea>
                 <br>
-                <!--<input type="button" value="Submit Item" id="button_submit">-->
                 <button id="button_submit">Submit Item</button>
                 <input type="reset" value="Reset Item" id="button_reset">
             </form>
         </div>
         <div class="weather-content">
             <h3>Weather App</h3>
+            <h5 id="today_date" onload="todayDate()"></h5>
             <div class="weather-container">
                 <p>Weather App API Location Here</p>
             </div>
@@ -57,5 +57,6 @@
             <p>&copy;&nbsp;2022, Design By Michael Miller</p>
         </div>
         <script src="javascript/todonote.js"></script>
+        <script src="javascript/date.js"></script>
     </body>
 </html>
