@@ -44,4 +44,4 @@ let a_p = "";
     let curMinute = + d.getMinutes();
     curMinute = curMinute > 9 ? curMinute : '0' + curMinute;
 
-document.getElementById("time_test").innerHTML = (`${curDay} ${curMonthStr} ${curYear} <br> ${curHour}:${curMinute} ${a_p}`);
+document.getElementById("today_date").innerHTML = (`${curDay} ${curMonthStr} ${curYear} <br> ${curHour}:${curMinute} ${a_p}`);
