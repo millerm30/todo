@@ -18,7 +18,7 @@ addBtn.addEventListener('click',function(){
 		notesObj = JSON.parse(notesString);
 	}
 	
-	//Add date
+	//Add date to card
 
 	let now = new Date();
 	let dateTime = `${now.getDate()}-${now.getMonth()+1}-${now.getFullYear()} | ${now.getHours()}:${now.getMinutes()}`;
