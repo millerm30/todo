@@ -1,44 +1,32 @@
 'use strict';
 
 let a_p = "";
-    let d = new Date();
-    let curDay = d.getDay();
-    let curMonth = d.getMonth();
-    if (curMonth == 0) {
-        curMonth = "January";
-    }
-    if (curMonth == 1) {
-        curMonth = "February";
-    }
-    if (curMonth == 2) {
-        curMonth = "March";
-    }
-    if (curMonth == 3) {
-        curMonth = "April";
-    }
-    if (curMonth == 4) {
-        curMonth = "May";
-    }
-    if (curMonth == 5) {
-        curMonth = "June";
-    }
-    if (curMonth == 6) {
-        curMonth = "July";
-    }
-    if (curMonth == 7) {
-        curMonth = "August";
-    }
-    if (curMonth == 8) {
-        curMonth = "September";
-    }
-    if (curMonth == 9) {
-        curMonth = "October";
-    }
-    if (curMonth == 10) {
-        curMonth = "November";
-    }
-    if (curMonth == 11) {
-        curMonth = "December";
+    const d = new Date();
+    const curDay = d.getDay();
+    const curMonth = d.getMonth();
+    let curMonthStr = "January";
+    if (curMonth === 1) {
+        curMonthStr = "February";
+    } else if (curMonth === 2) {
+        curMonthStr = "March";
+    } else if (curMonth === 3) {
+        curMonthStr = "April";
+    } else if (curMonth === 4) {
+        curMonthStr = "May";
+    } else if (curMonth === 5) {
+        curMonthStr = "June";
+    } else if (curMonth === 6) {
+        curMonthStr = "July";
+    } else if (curMonth === 7) {
+        curMonthStr = "August";
+    } else if (curMonth === 8) {
+        curMonthStr = "September";
+    } else if (curMonth === 9) {
+        curMonthStr = "October";
+    } else if (curMonth === 10) {
+        curMonthStr = "November";
+    } else if (curMonth === 11) {
+        curMonthStr = "December";
     }
     let curYear = d.getFullYear();
     let curHour = d.getHours();
@@ -56,6 +44,4 @@ let a_p = "";
     let curMinute = + d.getMinutes();
     curMinute = curMinute > 9 ? curMinute : '0' + curMinute;
 
-// printing to screen
-
-document.getElementById("today_date").innerHTML = (curDay + " " + curMonth + " " + curYear + " " + " <br> " + curHour + " : " + curMinute +  " " + a_p);
+document.getElementById("time_test").innerHTML = (`${curDay} ${curMonthStr} ${curYear} <br> ${curHour}:${curMinute} ${a_p}`);
