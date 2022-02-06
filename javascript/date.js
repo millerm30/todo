@@ -1,9 +1,11 @@
 'use strict';
 
+// Get Day of the week
+
 let a_p = '';
-    const time = new Date();
-    const curDay = time.getDate();
-    let day;
+const time = new Date();
+const curDay = time.getDate();
+let day;
     switch (new Date().getDay()) {
         case 0:
             day = 'Sunday';
@@ -28,8 +30,10 @@ let a_p = '';
             break;
     }
 
-    const curMonth = time.getMonth();
-    let curMonthStr;
+//  Get Current Year
+
+const curMonth = time.getMonth();
+let curMonthStr;
     switch (curMonth) {
         case 0:
             curMonthStr = 'Jaunary';
@@ -69,8 +73,13 @@ let a_p = '';
             break;
     }
 
-    const curYear = time.getFullYear();
-    let curHour = time.getHours();
+// Get Current Year
+
+const curYear = time.getFullYear();
+
+// Get Current Time
+
+let curHour = time.getHours();
     if (curHour == 0) {
         curHour = 12;
     } else if (curHour > 12) {
@@ -82,7 +91,9 @@ let a_p = '';
         a_p="PM"; 
     }
 
-    let curMinute = time.getMinutes();
-    curMinute = curMinute > 9 ? curMinute : '0' + curMinute;
+let curMinute = time.getMinutes();
+curMinute = curMinute > 9 ? curMinute : '0' + curMinute;
 
-    document.getElementById('today_date').innerHTML = (`${day} ${curMonthStr} ${curDay} ${curYear} <br> ${curHour}:${curMinute} ${a_p}`);
+// Writing script to HTML id="today_date"
+
+document.getElementById('today_date').innerHTML = (`${day} ${curMonthStr} ${curDay} ${curYear} <br> ${curHour}:${curMinute} ${a_p}`);
