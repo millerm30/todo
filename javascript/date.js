@@ -2,7 +2,7 @@
 
 let a_p = "";
     const d = new Date();
-    const curDay = d.getDay();
+    const curDay = d.getDate();
     const curMonth = d.getMonth();
     let curMonthStr = "January";
     if (curMonth === 1) {
