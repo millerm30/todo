@@ -83,6 +83,7 @@ body {
 .app-name h1 {
     font-size: 40px;
     color: #fff;
+    font-family: 'Permanent Marker', cursive, 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .app-name .wow sup {
