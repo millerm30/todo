@@ -32,8 +32,3 @@ const curTime = time.toLocaleTimeString();
 
 document.getElementById('today_date').innerHTML = (`${curDay} ${curMonth} ${curYear}<br>${curTime}`);
 }
-
-
-
-
-
