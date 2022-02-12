@@ -8,7 +8,6 @@ setInterval(myTimer, 1000);
 
 function myTimer() {
 
-let a_p = '';
 const time = new Date();
 
 // Get current day of week
@@ -27,27 +26,11 @@ const curYear = time.getFullYear();
 
 // Get Current Time
 
-let curHour = time.getHours();
-    if (curHour === 0) {
-        curHour = 12;
-    } else if (curHour > 12) {
-        curHour = curHour - 12;
-    }
-    if (curHour < 12) { 
-        a_p="AM"; 
-    } else { 
-        a_p="PM"; 
-    }
-
-let curMinute = time.getMinutes();
-curMinute = curMinute > 9 ? curMinute : '0' + curMinute;
-
-let curSeconds = time.getSeconds();
-curSeconds = curSeconds > 9 ? curSeconds : '0' + curSeconds;
+const curTime = time.toLocaleTimeString();
 
 // Writing script to HTML id="today_date"
 
-document.getElementById('today_date').innerHTML = (`${curDay} ${curMonth} ${curYear} <br> ${curHour}:${curMinute}:${curSeconds} ${a_p}`);
+document.getElementById('today_date').innerHTML = (`${curDay} ${curMonth} ${curYear}<br>${curTime}`);
 }
 
 
