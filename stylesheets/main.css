@@ -84,6 +84,7 @@ body {
     font-size: 40px;
     color: #fff;
     font-family: 'Permanent Marker', cursive, 'Roboto', Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 2px #000;
 }
 
 .app-name .wow sup {
