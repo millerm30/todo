@@ -13,74 +13,13 @@ const time = new Date();
 
 // Get current day of week
 
-const curDay = time.getDate();
-let day;
-    switch (new Date().getDay()) {
-        case 0:
-            day = 'Sunday';
-            break;
-        case 1:
-            day = 'Monday';
-            break;
-        case 2:
-            day = 'Tuesday';
-            break;
-        case 3:
-            day = 'Wednesday';
-            break;
-        case 4:
-            day = 'Thursday';
-            break;
-        case 5:
-            day = 'Friday';
-            break;
-        default:
-            day = 'Saturday';
-            break;
-    }
+const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const curDay = dayNames[time.getDay()];
 
 //  Get Current Month
 
-const curMonth = time.getMonth();
-let curMonthStr;
-    switch (curMonth) {
-        case 0:
-            curMonthStr = 'Jaunary';
-            break;
-        case 1:
-            curMonthStr = 'February';
-            break;
-        case 2:
-            curMonthStr = 'March';
-            break;
-        case 3:
-            curMonthStr = 'April';
-            break;
-        case 4:
-            curMonthStr = 'May';
-            break;
-        case 5:
-            curMonthStr = 'June';
-            break;
-        case 6:
-            curMonthStr = 'July';
-            break;
-        case 7:
-            curMonthStr = 'August';
-            break;
-        case 8:
-            curMonthStr = 'September';
-            break;
-        case 9:
-            curMonthStr = 'October';
-            break;
-        case 10:
-            curMonthStr = 'November';
-            break;
-        default:
-            curMonthStr = 'December';
-            break;
-    }
+const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const curMonth = monthNames[time.getMonth()];
 
 // Get Current Year
 
@@ -108,7 +47,7 @@ curSeconds = curSeconds > 9 ? curSeconds : '0' + curSeconds;
 
 // Writing script to HTML id="today_date"
 
-document.getElementById('today_date').innerHTML = (`${day} ${curMonthStr} ${curDay} ${curYear} <br> ${curHour}:${curMinute}:${curSeconds} ${a_p}`);
+document.getElementById('today_date').innerHTML = (`${curDay} ${curMonth} ${curYear} <br> ${curHour}:${curMinute}:${curSeconds} ${a_p}`);
 }
 
 
