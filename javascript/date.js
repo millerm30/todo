@@ -33,7 +33,7 @@ let curHour = time.getHours();
     } else if (curHour > 12) {
         curHour = curHour - 12;
     }
-    if (curHour > 12) { 
+    if (curHour < 12) { 
         a_p="AM"; 
     } else { 
         a_p="PM"; 
