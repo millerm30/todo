@@ -10,7 +10,7 @@ function myTimer() {
 
 const time = new Date();
 
-// Get current day of week
+// Get Current Day of Week
 
 const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const curDay = dayNames[time.getDay()];
@@ -19,6 +19,10 @@ const curDay = dayNames[time.getDay()];
 
 const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const curMonth = monthNames[time.getMonth()];
+
+// Get Current Date of Month
+
+const curDate = time.getDate();
 
 // Get Current Year
 
@@ -30,5 +34,5 @@ const curTime = time.toLocaleTimeString();
 
 // Writing script to HTML id="today_date"
 
-document.getElementById('today_date').innerHTML = (`${curDay} ${curMonth} ${curYear}<br>${curTime}`);
+document.getElementById('today_date').innerHTML = (`${curDay} ${curMonth} ${curDate} / ${curYear}<br>${curTime}`);
 }
