@@ -1,9 +1,18 @@
 'use strict';
 
-// Get Day of the week
+// setInterval for live time load refresh 1second interval
+
+setInterval(myTimer, 1000);
+
+// Date Function
+
+function myTimer() {
 
 let a_p = '';
 const time = new Date();
+
+// Get current day of week
+
 const curDay = time.getDate();
 let day;
     switch (new Date().getDay()) {
@@ -30,7 +39,7 @@ let day;
             break;
     }
 
-//  Get Current Year
+//  Get Current Month
 
 const curMonth = time.getMonth();
 let curMonthStr;
@@ -80,7 +89,7 @@ const curYear = time.getFullYear();
 // Get Current Time
 
 let curHour = time.getHours();
-    if (curHour == 0) {
+    if (curHour === 0) {
         curHour = 12;
     } else if (curHour > 12) {
         curHour = curHour - 12;
@@ -94,6 +103,15 @@ let curHour = time.getHours();
 let curMinute = time.getMinutes();
 curMinute = curMinute > 9 ? curMinute : '0' + curMinute;
 
+let curSeconds = time.getSeconds();
+curSeconds = curSeconds > 9 ? curSeconds : '0' + curSeconds;
+
 // Writing script to HTML id="today_date"
 
-document.getElementById('today_date').innerHTML = (`${day} ${curMonthStr} ${curDay} ${curYear} <br> ${curHour}:${curMinute} ${a_p}`);
+document.getElementById('today_date').innerHTML = (`${day} ${curMonthStr} ${curDay} ${curYear} <br> ${curHour}:${curMinute}:${curSeconds} ${a_p}`);
+}
+
+
+
+
+
