@@ -37,6 +37,7 @@ html {
     background-color: #E9EbEE;
     padding: 10px;
     border-radius: 20px;
+    min-height: 300px;
 }
 
 .inprogress-content {
@@ -44,6 +45,7 @@ html {
     background-color: #E9EbEE;
     padding: 10px;
     border-radius: 20px;
+    min-height: 300px;
 }
 
 .completed-content {
@@ -51,6 +53,7 @@ html {
     background-color: #E9EbEE;
     padding: 10px;
     border-radius: 20px;
+    min-height: 300px;
 }
 
 .footer-content {
