@@ -183,17 +183,6 @@ textarea {
     text-align: center;
 }
 
-/* To-Do Interior Settings */
-
-.todo-content h3 {
-    text-align: center;
-    border: 3px solid #ccc;
-    padding: 6px 10px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: #f8f8f8;
-}
-
 /* Draggable Card Settings */
 
 .card {
@@ -218,6 +207,17 @@ textarea {
 
 .card:active {
     cursor: grabbing;
+}
+
+/* To-Do Interior Settings */
+
+.todo-content h3 {
+    text-align: center;
+    border: 3px solid #ccc;
+    padding: 6px 10px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
 }
 
 /* In-Progress Interior Settings */
@@ -273,7 +273,7 @@ textarea {
     color: #fff;
 }
 
-/* @Media Inquires */
+/* @Media Inquires mobile settings*/
 
 @media screen and (max-width: 600px) {
     body { 
