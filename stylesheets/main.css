@@ -194,19 +194,29 @@ textarea {
     background-color: #f8f8f8;
 }
 
-.draggable_content {
+/* Draggable Card Settings */
+
+.card h4{
+    text-align: center;
     border: 3px solid #ccc;
+    padding: 6px 10px;
+    height: 40px;
     border-radius: 10px;
     background-color: #f8f8f8;
-    text-align: center;
-    height: 60px;
-    padding: 20px;
+    cursor: grab;    
+}
+
+.card h4:hover {
+    border-color: #4267B3;
+}
+
+.card:active {
+    cursor: grabbing;
 }
 
 /* In-Progress Interior Settings */
 
 .inprogress-content h3 {
-    text-align: center;
     text-align: center;
     border: 3px solid #ccc;
     padding: 6px 10px;
@@ -218,7 +228,6 @@ textarea {
 /* Completed Interior Settings */
 
 .completed-content h3 {
-    text-align: center;
     text-align: center;
     border: 3px solid #ccc;
     padding: 6px 10px;
