@@ -191,6 +191,15 @@ textarea {
     background-color: #f8f8f8;
 }
 
+.draggable_content {
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    text-align: center;
+    height: 60px;
+    padding: 20px;
+}
+
 /* In-Progress Interior Settings */
 
 .inprogress-content h3 {
