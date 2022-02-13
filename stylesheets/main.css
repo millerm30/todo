@@ -65,7 +65,7 @@ html {
 
 body {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto;
     grid-template-areas: 
         'header header header'
@@ -270,7 +270,12 @@ textarea {
 
 .footer-content {
     text-align: center;
-    color: #fff;
+    color: #ffffff;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 10px;
 }
 
 /* @Media Inquires mobile settings*/
