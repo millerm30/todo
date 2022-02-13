@@ -189,7 +189,6 @@ textarea {
     text-align: center;
     border: 3px solid #ccc;
     padding: 6px 10px;
-    height: 40px;
     border-radius: 10px;
     background-color: #f8f8f8;
     cursor: grab;
@@ -197,6 +196,11 @@ textarea {
 }
 
 .card h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.card p {
     padding: 0;
     margin: 0;
 }
