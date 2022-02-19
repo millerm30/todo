@@ -120,6 +120,7 @@ textarea {
     border-radius: 10px;
     background-color: #f8f8f8;
     resize: none;
+    white-space: pre-wrap;
 }
 
 #note_name {
@@ -130,7 +131,7 @@ textarea {
     border-radius: 10px;
 }
 
-#button_submit {
+.button_submit {
     float: right;
     text-align: center;
     vertical-align: middle;
@@ -143,7 +144,7 @@ textarea {
     height: 28px;
 }
 
-#button_reset {
+.button_reset {
     float: right;
     text-align: center;
     vertical-align: middle;
@@ -156,13 +157,30 @@ textarea {
     height: 28px;
 }
 
-#button_submit:hover, 
-#button_reset:hover,
+.button_submit:hover, 
+.button_reset:hover,
 #note_name:hover,
 #status:hover,
-#textarea:hover,
-.button-delete:hover {
+#textarea:hover {
     border-color: #4267B3;
+}
+
+/* Testing Note Add Area */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    white-space: pre-wrap;
+    line-height: 1.6em;
+    overflow-wrap: break-word;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    margin: 10px 0;
 }
 
 /* Weather App Settings */
@@ -244,30 +262,6 @@ textarea {
     height: 40px;
     border-radius: 10px;
     background-color: #f8f8f8;
-}
-
-/* Submitted Note Box Design */
-
-.button-delete {
-    text-align: center;
-    vertical-align: middle;
-    padding: 0px 10px;
-    cursor: pointer;
-    margin: 5px 0 5px 0;
-    background-color: #f8f8f8;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    height: 28px;
-}
-
-.my-note {
-    overflow-wrap: break-word;
-    width: 100%;
-    padding: 0px 10px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    background-color: #f8f8f8;
-    margin-bottom: 10px;
 }
 
 /* Footer Interior Settings */
