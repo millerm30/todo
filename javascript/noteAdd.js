@@ -28,7 +28,7 @@ function onSubmit(e) {
     div.className += 'card';
     div.setAttribute('draggable', "true");
     div.setAttribute('ondragstart', 'drag(event)')
-    div.setAttribute("data-id", 'uuidv4()');
+    div.setAttribute('data-id', uuidv4(e));
     const h4Head = document.createElement('h4');
     h4Head.appendChild(document.createTextNode(`${nameInput.value}`));
     const para = document.createElement('p');
