@@ -24,20 +24,25 @@ function uuidv4() {
 
 function onSubmit(e) {  
     e.preventDefault();
-    const div = document.createElement('div');
-    div.className += 'card';
-    div.setAttribute('draggable', "true");
-    div.setAttribute('ondragstart', 'drag(event)')
-    div.setAttribute('data-id', uuidv4(e));
-    const h4Head = document.createElement('h4');
-    h4Head.appendChild(document.createTextNode(`${nameInput.value}`));
-    const para = document.createElement('p');
-    para.appendChild(document.createTextNode(`${noteInput.value}`));
+    if (nameInput.value === '' || noteInput.value === '') {
+      alert('Please enter all fields!')
+    } else {
+      
+      const div = document.createElement('div');
+      div.className += 'card';
+      div.setAttribute('draggable', "true");
+      div.setAttribute('ondragstart', 'drag(event)')
+      div.setAttribute('data-id', uuidv4(e));
+      const h4Head = document.createElement('h4');
+      h4Head.appendChild(document.createTextNode(`${nameInput.value}`));
+      const para = document.createElement('p');
+      para.appendChild(document.createTextNode(`${noteInput.value}`));
 
-    noteList.appendChild(div);
-    div.append(h4Head, para);
+      noteList.appendChild(div);
+      div.append(h4Head, para);
 
-    //clear fields after note add
-    nameInput.value = "";
-    noteInput.value = "";
-}
+      //clear fields after note add
+      nameInput.value = "";
+      noteInput.value = "";
+    }
+};
