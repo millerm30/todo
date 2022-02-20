@@ -165,6 +165,10 @@ textarea {
     border-color: #4267B3;
 }
 
+.msg {
+   color: #ff0000;
+}
+
 /* Weather App Settings */
 
 .weather-content h3 {

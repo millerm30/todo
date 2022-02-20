@@ -6,6 +6,7 @@ const myForm = document.querySelector(".todo-form");
 const nameInput = document.querySelector("#note_name");
 const noteInput = document.querySelector("#textarea");
 const noteList = document.querySelector(".todo-content");
+const msg = document.querySelector(".msg");
 
 // OnSubmit Event Listener
 
@@ -25,7 +26,10 @@ function uuidv4() {
 function onSubmit(e) {  
     e.preventDefault();
     if (nameInput.value === '' || noteInput.value === '') {
-      alert('Please enter all fields!')
+      //msg.classList.add('error')
+      msg.innerHTML = 'Please enter all fields!'
+
+      setTimeout(() => msg.remove(), 3000);
     } else {
       
       const div = document.createElement('div');
