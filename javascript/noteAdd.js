@@ -35,8 +35,7 @@ function onSubmit(e) {
     para.appendChild(document.createTextNode(`${noteInput.value}`));
 
     noteList.appendChild(div);
-    div.appendChild(h4Head);
-    div.appendChild(para);
+    div.append(h4Head, para);
 
     //clear fields after note add
     nameInput.value = "";

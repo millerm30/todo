@@ -165,24 +165,6 @@ textarea {
     border-color: #4267B3;
 }
 
-/* Testing Note Add Area 
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 10px;
-    white-space: pre-wrap;
-    line-height: 1.6em;
-    overflow-wrap: break-word;
-    border: 3px solid #ccc;
-    border-radius: 10px;
-    background-color: #f8f8f8;
-    margin: 10px 0;
-} */
-
 /* Weather App Settings */
 
 .weather-content h3 {
@@ -216,12 +198,14 @@ ul li {
     padding: 0;
     margin: 0;
     text-align: center;
+    text-decoration: underline;
 }
 
 .card p {
     padding: 0;
     margin: 0;
     white-space: pre-wrap;
+    line-height: 1.5em;
 }
 
 .card:hover {
