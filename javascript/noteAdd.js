@@ -8,9 +8,11 @@ const noteInput = document.querySelector("#textarea");
 const noteList = document.querySelector(".todo-content");
 const msg = document.querySelector(".msg");
 
-// OnSubmit Event Listener
+// Event Listeners
 
-myForm.addEventListener("submit", onSubmit);
+myForm.addEventListener('submit', onSubmit);
+myForm.addEventListener('submit', errorMsg);
+myForm.addEventListener('submit', resetFields);
 
 // Functions
 
@@ -26,10 +28,8 @@ function uuidv4() {
 function onSubmit(e) {  
     e.preventDefault();
     if (nameInput.value === '' || noteInput.value === '') {
-      //msg.classList.add('error')
       msg.innerHTML = 'Please enter all fields!'
 
-      setTimeout(() => msg.remove(), 3000);
     } else {
       
       const div = document.createElement('div');
@@ -44,9 +44,13 @@ function onSubmit(e) {
 
       noteList.appendChild(div);
       div.append(h4Head, para);
-
-      //clear fields after note add
-      nameInput.value = "";
-      noteInput.value = "";
     }
-};
+}
+
+function resetFields() {
+    myForm.reset();
+}
+
+function errorMsg() {
+  setTimeout(() => msg.remove(), 3000);
+}
