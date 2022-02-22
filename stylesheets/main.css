@@ -201,7 +201,7 @@ textarea {
 }
 
 .card h4 {
-    padding: 0;
+    padding: 0 0 5px 0;
     margin: 0;
     text-align: center;
     text-decoration: underline;
@@ -223,7 +223,11 @@ textarea {
 }
 
 .button_delete {
-    cursor: pointer;    
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: 0 0 0 auto;
 }
 
 /* To-Do Interior Settings */
