@@ -159,6 +159,7 @@ textarea {
 
 .button_submit:hover, 
 .button_reset:hover,
+.button_delete:hover,
 #note_name:hover,
 #status:hover,
 #textarea:hover {
@@ -219,6 +220,15 @@ textarea {
 
 .card:active {
     cursor: grabbing;
+}
+
+.button_delete {
+    padding: 0 10px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    line-height: 1.20em;
 }
 
 /* To-Do Interior Settings */

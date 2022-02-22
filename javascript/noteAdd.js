@@ -41,6 +41,7 @@ function onSubmit(e) {
       h4Head.appendChild(document.createTextNode(`${nameInput.value}`));
       const para = document.createElement('p');
       para.appendChild(document.createTextNode(`${noteInput.value}`));
+      div.innerHTML = '<button class="button_delete" onclick="deleteItem(this)">Delete</button>';
 
       noteList.appendChild(div);
       div.append(h4Head, para);
@@ -53,4 +54,8 @@ function resetFields() {
 
 function errorMsg() {
   setTimeout(() => msg.remove(), 3000);
+}
+
+function deleteItem(e) {
+  e.parentElement.hide()
 }
