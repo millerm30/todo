@@ -41,7 +41,7 @@ function onSubmit(e) {
       h4Head.appendChild(document.createTextNode(`${nameInput.value}`));
       const para = document.createElement('p');
       para.appendChild(document.createTextNode(`${noteInput.value}`));
-      div.innerHTML = '<button class="button_delete" onclick="deleteItem(this)">Delete</button>';
+      div.innerHTML = '<img src="./images/icondelete.png" class="button_delete" alt="delete button" onclick="deleteItem(this)">';
 
       noteList.appendChild(div);
       div.append(h4Head, para);
