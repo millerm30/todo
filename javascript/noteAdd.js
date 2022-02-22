@@ -57,5 +57,5 @@ function errorMsg() {
 }
 
 function deleteItem(e) {
-  e.parentElement.hide()
+  e.parentElement.remove()
 }
