@@ -196,6 +196,7 @@ textarea {
     background-color: #f8f8f8;
     cursor: grab;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .card h4 {
