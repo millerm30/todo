@@ -28,12 +28,12 @@ function onSubmit(e) {
     e.preventDefault();
     if (nameInput.value === '' || nameInput === null) {
       msg.innerHTML = 'Please enter note name!'
-
+      
     } else if (noteInput.value === '' || noteInput.value === null) {
       msg.innerHTML = 'Please enter your note!'
-      
+     
     } else {
-
+      
       const div = document.createElement('div');
       div.className += 'card';
       div.setAttribute('draggable', "true");
