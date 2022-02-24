@@ -12,7 +12,6 @@ const msg = document.querySelector(".msg");
 
 myForm.addEventListener('submit', onSubmit);
 myForm.addEventListener('submit', errorMsg);
-myForm.addEventListener('submit', resetFields);
 
 // Functions
 
@@ -27,11 +26,14 @@ function uuidv4() {
 
 function onSubmit(e) {  
     e.preventDefault();
-    if (nameInput.value === '' || noteInput.value === '') {
-      msg.innerHTML = 'Please enter all fields!'
+    if (nameInput.value === '' || nameInput === null) {
+      msg.innerHTML = 'Please enter note name!'
 
-    } else {
+    } else if (noteInput.value === '' || noteInput.value === null) {
+      msg.innerHTML = 'Please enter your note!'
       
+    } else {
+
       const div = document.createElement('div');
       div.className += 'card';
       div.setAttribute('draggable', "true");
@@ -41,21 +43,19 @@ function onSubmit(e) {
       h4Head.appendChild(document.createTextNode(`${nameInput.value}`));
       const para = document.createElement('p');
       para.appendChild(document.createTextNode(`${noteInput.value}`));
-      div.innerHTML = '<img src="./images/cancel.png" class="button_delete" alt="delete button" onclick="deleteItem(this)">';
+      div.innerHTML = '<img src="./images/cancel.png" class="button_delete" alt="delete button" onclick="deleteNote(this)">';
 
       noteList.appendChild(div);
       div.append(h4Head, para);
-    }
-}
 
-function resetFields() {
-    myForm.reset();
+      myForm.reset();
+    }
 }
 
 function errorMsg() {
   setTimeout(() => msg.remove(), 3000);
 }
 
-function deleteItem(e) {
+function deleteNote(e) {
   e.parentElement.remove()
 }
