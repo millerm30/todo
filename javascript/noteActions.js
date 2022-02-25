@@ -53,7 +53,7 @@ function onSubmit(e) {
 }
 
 function errorMsg() {
-  setTimeout(() => msg.remove(), 3000);
+  setTimeout(() => msg.innerHTML = '', 3000);
 }
 
 function deleteNote(e) {
