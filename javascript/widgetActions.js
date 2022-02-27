@@ -1,10 +1,12 @@
 'use strict';
 
+let newWindow;
+
 // App Widget Open to Window
 
 function popitup(url) {
-    newwindow = window.open("calculator.html", "mycalc","height=610,width=375");
+    newWindow = window.open("calculator.html", "mycalc","height=610,width=375");
 
-    if (window.focus) {newwindow.focus()}
+    if (window.focus) {newWindow.focus()}
     return false;
 }
