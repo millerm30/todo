@@ -110,6 +110,11 @@ h4 {
     grid-column-end: 3;
 }
 
+.keypad-btns #evaluate {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
 .num_btn:hover,
 .fun_btn:hover {
     background-color: #00000000;
