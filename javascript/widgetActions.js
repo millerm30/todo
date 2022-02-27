@@ -8,5 +8,3 @@ function popitup(url) {
     if (window.focus) {newwindow.focus()}
     return false;
 }
-
-// Calculator Operations to be added
