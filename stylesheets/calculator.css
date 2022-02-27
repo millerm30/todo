@@ -24,6 +24,7 @@ body {
     border-radius: 10px;
     user-select: none;
     border: 2px solid #ccc;
+    box-shadow: 0px 0px 10px #000;
 }
 
 .header_content {
@@ -91,14 +92,12 @@ h4 {
 }
 
 .keypad-btns button {
-    outline: none;
-    border: none;
+    text-align: center;
     border-radius: 10px;
     background-color: #f8f8f8;
     color: #000;
     font-size: x-large;
     border: 2px solid #ccc;
-    box-shadow: 0px 0px 3px 1px #000;
 }
 
 .keypad-btns .fun_btn {
@@ -108,20 +107,18 @@ h4 {
 .keypad-btns #clear {
     grid-column-start: 1;
     grid-column-end: 3;
+    background-color: #ff8800;
+    color: #000;
 }
 
 .keypad-btns #evaluate {
     grid-column-start: 3;
     grid-column-end: 5;
+    background-color: #ff8800;
+    color: #000;
 }
 
 .num_btn:hover,
 .fun_btn:hover {
-    background-color: #00000000;
+    box-shadow: inset 0px 0px 5px #000;
 }
-
-/* @media only screen and (max-width: 600px) {
-    body {
-        align-items: flex-start;
-    }
-}*/
