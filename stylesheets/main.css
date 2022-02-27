@@ -218,6 +218,10 @@ textarea {
     justify-content: center;
 }
 
+.apps-widget img:hover {
+    transform: rotate(20deg);
+}
+
 /* Draggable Card Settings */
 
 .card {
