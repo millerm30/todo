@@ -169,7 +169,7 @@ textarea {
    color: #ff0000;
 }
 
-/* Weather App Settings */
+/* App Widget Settings */
 
 .weather-content h3 {
     text-align: center;
@@ -211,6 +211,11 @@ textarea {
 
 #today_date {
     text-align: center;
+}
+
+.apps-widget {
+    display: flex;
+    justify-content: center;
 }
 
 /* Draggable Card Settings */

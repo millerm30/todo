@@ -1,0 +1,122 @@
+html {
+    margin: 5px auto;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+body {
+    background-color: #f4f4f4;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #E9EbEE;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25px;
+    border-radius: 10px;
+    user-select: none;
+    border: 2px solid #ccc;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header_content img {
+    border: 1px solid #0000002c;
+}
+
+h4 {
+    padding: 0 5px;
+    margin: 0;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-radius: 5px;
+}
+
+.appName {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#Display-area {
+    width: 100%;
+    margin: 3vh 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, minmax(40px, auto));
+    word-wrap: break-word;
+    padding: 0 5px 10px 0;
+    border: 2px solid #f5e5e591;
+    border-radius: 10px;
+    background-color: #4268b3;
+}
+
+#Display-area .currentInput {
+    text-align: right;
+    height: 8vh;
+    color: #ffffff;
+    font-size: xx-large;
+    line-height: 2;
+    word-wrap: break-word;
+}
+
+#Display-area .answerScreen {
+    text-align: right;
+    color: #ffffff;
+    height: 7px;
+    line-height: 3;
+    font-size: larger;
+}
+
+.keypad-btns {
+    display: grid;
+    grid: repeat(5, 60px) / repeat(4, 60px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.keypad-btns button {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    color: #000;
+    font-size: x-large;
+    border: 2px solid #ccc;
+    box-shadow: 0px 0px 3px 1px #000;
+}
+
+.keypad-btns .fun_btn {
+    color: #ff8800;
+}
+
+.keypad-btns #clear {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.num_btn:hover,
+.fun_btn:hover {
+    background-color: #00000000;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        align-items: flex-start;
+    }
+}
