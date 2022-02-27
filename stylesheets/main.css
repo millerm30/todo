@@ -180,7 +180,33 @@ textarea {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
     margin: 0 5px 0 5px;
+}
+
+#location {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.description {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.circle {
+    background-color: black;
+    border-radius: 50px;
+    height: 5px;
+    width: 5px;
+    margin: 0 15px;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 1.5rem;
 }
 
 #today_date {
