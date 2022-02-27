@@ -219,7 +219,7 @@ textarea {
 }
 
 .apps-widget img:hover {
-    transform: rotate(20deg);
+    transform: scale(1.5);
 }
 
 /* Draggable Card Settings */
