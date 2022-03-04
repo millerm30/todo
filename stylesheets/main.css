@@ -183,7 +183,6 @@ textarea {
     text-align: center;
     flex-direction: column;
     margin: 0 5px 0 5px;
-    border-radius: 20px;
 }
 
 #temp {
@@ -204,7 +203,7 @@ textarea {
 
 #iconHead {
     background-color: #4267B3;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     width: 100%;
     height: 100px;
 }
