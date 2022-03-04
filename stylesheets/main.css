@@ -121,6 +121,7 @@ textarea {
     background-color: #f8f8f8;
     resize: none;
     white-space: pre-wrap;
+    margin-bottom: 20px;
 }
 
 #note_name {
@@ -182,31 +183,30 @@ textarea {
     text-align: center;
     flex-direction: column;
     margin: 0 5px 0 5px;
+    border-radius: 20px;
 }
 
-#location {
-    font-size: 1.5rem;
-    font-style: italic;
+#temp {
+    font-size: 2.4em;
+    margin: 0;
+    padding: 10px;
 }
 
-.description {
-    font-size: 1.25rem;
-    text-transform: capitalize;
+#feelsLike {
+    margin: 0;
+    padding: 10px;
 }
 
-.circle {
-    background-color: black;
-    border-radius: 50px;
-    height: 5px;
-    width: 5px;
-    margin: 0 15px;
+#weatherIcon {
+    display: block;
+    margin: 0 auto;
 }
 
-.weather {
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
-    font-size: 1.5rem;
+#iconHead {
+    background-color: #4267B3;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 100px;
 }
 
 #today_date {

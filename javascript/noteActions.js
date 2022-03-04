@@ -30,10 +30,10 @@ function onSubmit(e) {
       msg.innerHTML = 'Please enter all fields!'
     
     } else if (nameInput.value === '' || nameInput === null) {
-      msg.innerHTML = 'Please enter your note name!'
+      msg.innerHTML = 'Please enter note name!'
       
     } else if (noteInput.value === '' || noteInput.value === null) {
-      msg.innerHTML = 'Please enter your note message!'
+      msg.innerHTML = 'Please enter note message!'
      
     } else {
       
