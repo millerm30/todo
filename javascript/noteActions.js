@@ -1,12 +1,12 @@
-"use strict";
+'use strict';
 
 // Form Reference
 
-const myForm = document.querySelector(".todo-form");
-const nameInput = document.querySelector("#note_name");
-const noteInput = document.querySelector("#textarea");
-const noteList = document.querySelector(".todo-content");
-const msg = document.querySelector(".msg");
+const myForm = document.querySelector('.todo-form');
+const nameInput = document.querySelector('#note_name');
+const noteInput = document.querySelector('#textarea');
+const noteList = document.querySelector('.todo-content');
+const msg = document.querySelector('.msg');
 
 // Event Listeners
 

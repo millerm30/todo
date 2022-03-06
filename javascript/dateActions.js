@@ -34,5 +34,5 @@ const curTime = time.toLocaleTimeString();
 
 // Writing script to HTML id="today_date"
 
-document.getElementById('today_date').innerHTML = (`${curDay} ${curMonth} ${curDate} / ${curYear}<br>${curTime}`);
+document.querySelector('#today_date').innerHTML = (`${curDay} ${curMonth} ${curDate} / ${curYear}<br>${curTime}`);
 }
