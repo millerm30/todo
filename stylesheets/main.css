@@ -286,33 +286,33 @@ textarea {
 
 .todo-content h3 {
     text-align: center;
-    border: 3px solid #ccc;
-    padding: 6px 10px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: #f8f8f8;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 20px 20px 0 0;
+    background-color: #4267B3;
+    font-weight: 500;
 }
 
 /* In-Progress Interior Settings */
 
 .inprogress-content h3 {
     text-align: center;
-    border: 3px solid #ccc;
-    padding: 6px 10px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: #f8f8f8;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 20px 20px 0 0;
+    background-color: #4267B3;
+    font-weight: 500;
 }
 
 /* Completed Interior Settings */
 
 .completed-content h3 {
     text-align: center;
-    border: 3px solid #ccc;
-    padding: 6px 10px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: #f8f8f8;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 20px 20px 0 0;
+    background-color: #4267B3;
+    font-weight: 500;
 }
 
 /* Footer Interior Settings */
