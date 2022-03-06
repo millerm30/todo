@@ -143,6 +143,7 @@ textarea {
     border: 2px solid #ccc;
     border-radius: 10px;
     height: 28px;
+    line-height: 1.6em;
 }
 
 .button_reset {
@@ -156,6 +157,7 @@ textarea {
     border: 2px solid #ccc;
     border-radius: 10px;
     height: 28px;
+    line-height: 1.6em;
 }
 
 .button_submit:hover, 
