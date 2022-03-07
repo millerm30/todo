@@ -13,6 +13,7 @@
         <link href="stylesheets/normalize.css" rel="stylesheet">
         <link href="stylesheets/main.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"> </script>
+        <script src="javascript/config.js"></script>
     </head>
     <body>
         <div class="header-content">
@@ -47,15 +48,16 @@
             <h5 id="today_date"></h5>
             <div class="weather-container">
                 <div id="iconContent">
-                    <img src="icons/01d.svg" id="weatherIcon" width="60px">
+                    <img src="" id="weatherIcon" width="60px">
                 </div>
-                <div id="description">Sunny Periods</div>
-                <h1 id="temp">-4&deg;C</h1>
-                <h3 id="feelsLike">-11&deg;C</h3>
+                <div id="description"></div>
+                <h1 id="temp"></h1>
+                <h3 id="feelsLike"></h3>
                 <div id="location"></div>
-                <div id="wind">Wind Speed: 12 km/h</div>
-                <div id="windGust">Wind Gusts: 26 km/h</div>
-                <div id="humidity">Humidity: 69%</div>
+                <div id="wind"></div>
+                <div id="windGust"></div>
+                <div id="humidity"></div>
+                <div id="snowFall"></div>
             </div>
         </div>
         <div class="todo-content" ondrop="drop(event)" ondragover="allowDrop(event)">
