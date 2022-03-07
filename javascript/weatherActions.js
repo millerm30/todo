@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
         document.querySelector('#temp').innerHTML = `${celcius}&deg;C`;
         document.querySelector('#feelsLike').innerHTML = `Feels Like ${feelsLike}&deg;C`;
         document.querySelector('#location').innerHTML = `Location: ${response.data.name}`;
-        document.querySelector('#wind').innerHTML = `Wind: ${windSpeed} km/h`;
+        document.querySelector('#wind').innerHTML = `Wind Speed: ${windSpeed} km/h`;
         document.querySelector('#humidity').innerHTML = `Humidity: ${humid}%`;
         iconImg.src = iconUrl;
       })
