@@ -42,6 +42,17 @@ buttons.forEach((btn) => {
     if (btn.id.match('evaluate')) {
       answerScreen.className = 'currentInput';
       currentInput.className = 'answerScreen';
+
     }
   });
 });
+
+
+/*document.addEventListener("keydown", (event) => {
+  // when key is not clear
+  if (event.key) {
+    // To display value on keyboard press
+    realTimeScreenValue.push(event.key);
+    currentInput.innerHTML = realTimeScreenValue.join("");
+  }
+});*/
