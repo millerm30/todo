@@ -15,11 +15,11 @@ window.addEventListener('load', () => {
         let celcius = Math.round(parseFloat(response.data.main.temp));
         let feelsLike = Math.round(parseFloat(response.data.main.feels_like));
         let windSpeed = Math.round(parseFloat(response.data.wind.speed * 3.6));
-        let windGust = Math.round(parseFloat(response.data.wind.gust * 3.6));
-        if (isNaN(windGust)) {
-          document.querySelector('#windGust').innerHTML = 'Wind Gust: No Current Data!';
-        } else {
-          document.querySelector('#windGust').innerHTML = `Wind Gust: ${windGust} km/h`;
+        if (response.data.wind.gust) {
+          let windGust = Math.round(parseFloat(response.data.wind.gust * 3.6));
+          document.querySelector("#windGust").innerHTML = `Wind Gust: ${windGust} km/h`;
+          } else {
+          document.querySelector("#windGust").innerHTML = "Wind Gust: No Current Data!";
         }
         let humid = response.data.main.humidity;
         const iconImg = document.querySelector('#weatherIcon');
