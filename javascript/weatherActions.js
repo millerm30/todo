@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
           const windGust = Math.round(parseFloat(response.data.wind.gust * 3.6));
           document.querySelector('#windGust').innerHTML = `Wind Gust: ${windGust} km/h`;
           } else {
-          document.querySelector('#windGust').innerHTML = 'Wind Gust: No Current Data!';
+          document.querySelector('#windGust').innerHTML = '';
         }
         const humid = response.data.main.humidity;
         const iconImg = document.querySelector('#weatherIcon');
