@@ -21,6 +21,18 @@ window.addEventListener('load', () => {
         } else {
           document.querySelector('#windGust').hidden = true;
         }
+        if (response.data.snow) {
+          const snowFall = response.data.snow['1h'];
+          document.querySelector('#snowFall').innerHTML = `Snow Fall: ${snowFall}`;
+        } else {
+          document.querySelector('#snowFall').hidden = true;
+        }
+        if (response.data.rain) {
+          const rainFall = response.data.rain['1h'];
+          document.querySelector('#rainFall').innerHTML = `Rain Fall: ${rainFall}`;
+        } else {
+          document.querySelector('#rainFall').hidden = true;
+        }
         const humid = response.data.main.humidity;
         const iconImg = document.querySelector('#weatherIcon');
         const weatherIcon = response.data.weather[0].icon;
