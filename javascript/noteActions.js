@@ -27,13 +27,13 @@ function uuidv4() {
 function onSubmit(e) {  
     e.preventDefault();
     if (nameInput.value === '' && noteInput.value === '') {
-      msg.innerHTML = 'Please enter all fields!'
+      msg.innerHTML = 'Enter all fields!'
     
     } else if (nameInput.value === '' || nameInput === null) {
-      msg.innerHTML = 'Please enter note name!'
+      msg.innerHTML = 'Enter note name!'
       
     } else if (noteInput.value === '' || noteInput.value === null) {
-      msg.innerHTML = 'Please enter note message!'
+      msg.innerHTML = 'Enter note message!'
      
     } else {
       const div = document.createElement('div');
