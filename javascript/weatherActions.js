@@ -8,22 +8,22 @@ window.addEventListener('load', () => {
       navigator.geolocation.getCurrentPosition((position) => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
-      let base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${token}&units=metric`;
+      const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${token}&units=metric`;
 
       axios.get(base)
         .then((response) => {
-        let celcius = Math.round(parseFloat(response.data.main.temp));
-        let feelsLike = Math.round(parseFloat(response.data.main.feels_like));
-        let windSpeed = Math.round(parseFloat(response.data.wind.speed * 3.6));
+        const celcius = Math.round(parseFloat(response.data.main.temp));
+        const feelsLike = Math.round(parseFloat(response.data.main.feels_like));
+        const windSpeed = Math.round(parseFloat(response.data.wind.speed * 3.6));
         if (response.data.wind.gust) {
-          let windGust = Math.round(parseFloat(response.data.wind.gust * 3.6));
+          const windGust = Math.round(parseFloat(response.data.wind.gust * 3.6));
           document.querySelector('#windGust').innerHTML = `Wind Gust: ${windGust} km/h`;
         } else {
           document.querySelector('#windGust').innerHTML = 'Wind Gust: No Current Data!';
         }
-        let humid = response.data.main.humidity;
+        const humid = response.data.main.humidity;
         const iconImg = document.querySelector('#weatherIcon');
-        let weatherIcon = response.data.weather[0].icon;
+        const weatherIcon = response.data.weather[0].icon;
         const iconUrl = `icons/${weatherIcon}.svg`;
         document.querySelector('#description').innerHTML = `${response.data.weather[0].description}`;
         document.querySelector('#temp').innerHTML = `${celcius}&deg;C`;
