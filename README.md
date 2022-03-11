@@ -1,5 +1,4 @@
 # {Drag & Drop} To - Do Web App
-https://github.com/millerm30/todo]/blob/main/notepad.png?raw=true
 ###### Drag and Drop to do note web app
 ###### Includes local date and time
 ###### Will add weather API 
