@@ -337,10 +337,10 @@ textarea {
     grid-template-areas: 
         'header header header'
         'list list list'
-        'weather weather weather'
         'todo todo todo'
         'progress progress progress'
         'complete complete complete'
+        'weather weather weather'
         'footer footer footer';
     }
 }
