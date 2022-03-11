@@ -36,7 +36,6 @@ function onSubmit(e) {
       msg.innerHTML = 'Please enter note message!'
      
     } else {
-      
       const div = document.createElement('div');
       div.className += 'card';
       div.setAttribute('draggable', "true");
@@ -47,10 +46,8 @@ function onSubmit(e) {
       const para = document.createElement('p');
       para.appendChild(document.createTextNode(`${noteInput.value}`));
       div.innerHTML = '<img src="./images/cancel.png" class="button_delete" alt="delete button" onclick="deleteNote(this)">';
-
       noteList.appendChild(div);
       div.append(h4Head, para);
-
       myForm.reset();
     }
 }

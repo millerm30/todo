@@ -25,7 +25,6 @@ window.addEventListener('load', () => {
         const iconImg = document.querySelector('#weatherIcon');
         let weatherIcon = response.data.weather[0].icon;
         const iconUrl = `icons/${weatherIcon}.svg`;
-
         document.querySelector('#description').innerHTML = `${response.data.weather[0].description}`;
         document.querySelector('#temp').innerHTML = `${celcius}&deg;C`;
         document.querySelector('#feelsLike').innerHTML = `Feels Like ${feelsLike}&deg;C`;
