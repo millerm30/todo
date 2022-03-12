@@ -1,58 +1,92 @@
-'use strict';
+// local variables:
+const output = document.getElementsByClassName("answerScreen")[0];
+let equation = "";
+let number = "";
+let id = "";
+let type = "";
 
-// Variables
+// button click:
+const buttons = document.getElementsByClassName("btn");
 
-let currentInput = document.querySelector('.currentInput');
-let answerScreen = document.querySelector('.answerScreen');
-let buttons = document.querySelectorAll('button');
-let clearbtn = document.querySelector('#clear');
-let evaluate = document.querySelector('#evaluate');
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener(
+    "click",
+    function () {
+      id = this.getAttribute("data-id");
+      type = this.getAttribute("data-type");
 
+      switch (type) {
+        case "clear":
+          Clear();
+          break;
 
-// Calculator Display
+        case "operator":
+          Operator();
+          break;
 
-let realTimeScreenValue = [];
+        case "symbol":
+          Symbol();
+          break;
 
-// To Clear
+        case "equal":
+          Equal();
+          break;
 
-clearbtn.addEventListener('click', () => {
-  realTimeScreenValue = [''];
-  answerScreen.innerHTML = 0;
-  currentInput.className = 'currentInput';
-  answerScreen.className = 'answerScreen';
-});
+        default:
+          Default();
+          break;
+      }
+    },
+    false
+  );
+}
 
-// Get value of any button clicked and display to the screen
+// clear:
+function Clear() {
+  number = "";
+  equation = "";
+  output.innerHTML = 0;
+}
 
-buttons.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    // when clicked button is not clear button
-    if (!btn.id.match('button')) {
-      // To display value on btn press
-      realTimeScreenValue.push(btn.value);
-      currentInput.innerHTML = realTimeScreenValue.join('');
+// operator:
+function Operator() {
+  equation += id;
+  output.innerHTML = number + " " + id;
+  number = "";
+}
 
-      // To evaluate answer in real time
-      if (btn.classList.contains('num_btn')) {
-        answerScreen.innerHTML = eval(realTimeScreenValue.join(''));
+// symbol:
+function Symbol() {
+  number += id;
+  equation += id;
+  output.innerHTML = number;
+}
+
+// equal:
+function Equal() {
+  number = eval(equation);
+  equation = number;
+  output.innerHTML = number;
+}
+
+// default:
+function Default() {
+  number += id;
+  equation += id;
+  output.innerHTML = number;
+}
+
+// Keyboard Event Listener:
+document.addEventListener("keydown", function (event) {
+  if (event.key != 13) {
+    for (let i = 0; i < buttons.length; i++) {
+      const id = buttons[i].getAttribute("data-id");
+
+      if (id === event.key) {
+        buttons[i].click();
       }
     }
-
-    // When clicked button is evaluate button
-    if (btn.id.match('evaluate')) {
-      answerScreen.className = 'currentInput';
-      currentInput.className = 'answerScreen';
-
-    }
-  });
-});
-
-
-/*document.addEventListener("keydown", (event) => {
-  // when key is not clear
-  if (event.key) {
-    // To display value on keyboard press
-    realTimeScreenValue.push(event.key);
-    currentInput.innerHTML = realTimeScreenValue.join("");
+  } else {
+    document.getElementById("equal").click();
   }
-});*/
+});
