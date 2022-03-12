@@ -4,7 +4,7 @@
 This is my first project as a student of Get Coding. This web app is wriitten with HTML, CSS and Vanilla JavaScript.
 This web app allows users to create notes that become draggable from 3 drop areas. Along with the draggable notes, this app also includes the users local weather built with Open Weather API and an app widget area that includes a functional calculator app.
 
-This application was created to create an all in one application that can be used to track daily tasks in my current role as a  project manager. 
+This application was created to create an all in one application that can be used to track daily tasks in my current role as a  project manager, reducing the need for multiple applications.
 ![App Logo](images/todologo.jpg)
 
 
