@@ -12,7 +12,7 @@ body {
     align-items: center;
 }
 
-.container {
+.calculator {
     background-color: #E9EbEE;
     max-width: 300px;
     height: auto;
@@ -54,71 +54,59 @@ h4 {
     font-style: italic;
 }
 
-#Display-area {
+.output {
+    text-align: right;
+    height: 80px;
     width: 100%;
-    margin: 3vh 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(2, minmax(40px, auto));
-    word-wrap: break-word;
-    padding: 0 5px 10px 0;
+    margin: 20px;
     border: 2px solid #f5e5e591;
     border-radius: 10px;
     background-color: #4268b3;
+    overflow: hidden;
 }
 
-#Display-area .currentInput {
-    text-align: right;
-    height: 8vh;
-    color: #ffffff;
-    font-size: xx-large;
-    line-height: 2;
-    word-wrap: break-word;
+.answerScreen {
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    padding: 25px 5px;
 }
 
-#Display-area .answerScreen {
-    text-align: right;
-    color: #ffffff;
-    height: 7px;
-    line-height: 3;
-    font-size: larger;
-}
-
-.keypad-btns {
+.keyBtns {
     display: grid;
     grid: repeat(5, 60px) / repeat(4, 60px);
     grid-row-gap: 20px;
     grid-column-gap: 20px;
 }
 
-.keypad-btns button {
+.btn {
     text-align: center;
     border-radius: 10px;
     background-color: #f8f8f8;
     color: #000;
     font-size: 22px;
     border: 2px solid #ccc;
+    padding: 15px;
 }
 
-.keypad-btns .fun_btn {
+#funBtn {
     color: #ff8800;
 }
 
-.keypad-btns #clear {
+#clear {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
     background-color: #ff8800;
     color: #000;
 }
 
-.keypad-btns #evaluate {
+#equal {
     grid-column-start: 3;
     grid-column-end: 5;
     background-color: #ff8800;
     color: #000;
 }
 
-.num_btn:hover,
-.fun_btn:hover {
+.btn:hover {
     box-shadow: inset 0px 0px 5px #000;
 }

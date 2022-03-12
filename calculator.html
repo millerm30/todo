@@ -13,35 +13,33 @@
     <link href="stylesheets/calculator.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="calculator">
         <div class="header_content">
             <img src="images/calculator.png" alt="Calculator" width="30px">
             <h4>Calculator<span class="appName"><sup>&nbsp;App</sup></span></h4>
         </div>
-        <section id="Display-area">
-            <div class="currentInput"></div>
-            <div class="answerScreen"></div>
-        </section>
-        <section class="keypad-btns">
-            <button type="button" class="fun_btn" id="clear" value="">C</button>
-            <button type="button" class="fun_btn" value="/">/</button>
-            <button type="button" class="fun_btn" value="%">%</button>
-            <button type="button" class="num_btn" value="7">7</button>
-            <button type="button" class="num_btn" value="8">8</button>
-            <button type="button" class="num_btn" value="9">9</button>
-            <button type="button" class="fun_btn" value="*">x</button>
-            <button type="button" class="num_btn" value="4">4</button>
-            <button type="button" class="num_btn" value="5">5</button>
-            <button type="button" class="num_btn" value="6">6</button>
-            <button type="button" class="fun_btn" value="-">-</button>
-            <button type="button" class="num_btn" value="1">1</button>
-            <button type="button" class="num_btn" value="2">2</button>
-            <button type="button" class="num_btn" value="3">3</button>
-            <button type="button" class="fun_btn" value="+">+</button>
-            <button type="button" class="num_btn" value="0">0</button>
-            <button type="button" class="num_btn" value=".">.</button>
-            <button type="button" class="fun_btn" id="evaluate" value="">=</button>
-        </section>
+        <div class="output">
+            <h3 class="answerScreen">0</h3>
+        </div>
+        <div class="keyBtns">
+            <div class="btn" data-type="clear" data-id="C" id="clear">AC</div>
+            <div class="btn" data-type="operator" data-id="/" id="funBtn">&divide;</div>
+            <div class="btn" data-type="number" data-id="7">7</div>
+            <div class="btn" data-type="number" data-id="8">8</div>
+            <div class="btn" data-type="number" data-id="9">9</div>
+            <div class="btn" data-type="operator" data-id="*" id="funBtn">&times;</div>
+            <div class="btn" data-type="number" data-id="4">4</div>
+            <div class="btn" data-type="number" data-id="5">5</div>
+            <div class="btn" data-type="number" data-id="6">6</div>
+            <div class="btn" data-type="operator" data-id="-" id="funBtn">&minus;</div>
+            <div class="btn" data-type="number" data-id="1">1</div>
+            <div class="btn" data-type="number" data-id="2">2</div>
+            <div class="btn" data-type="number" data-id="3">3</div>
+            <div class="btn" data-type="operator" data-id="+" id="funBtn">&plus;</div>
+            <div class="btn" data-type="number" data-id="0">0</div>
+            <div class="btn" data-type="symbol" data-id=".">.</div>
+            <div class="btn" data-type="equal" data-id="=" id="equal">=</div>
+        </div>
     </div>
     <script src="javascript/calculatorActions.js"></script>
 </body>
