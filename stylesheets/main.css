@@ -103,8 +103,9 @@ body {
 
 /* List Interior Settings */
 
-.list-content h3 {
+.todo-name {
     text-align: center;
+    margin: 0px 0px 20px 0px;
 }
 
 /* Form Settings */
@@ -171,8 +172,9 @@ textarea {
 
 /* App Widget Settings */
 
-.weather-content h3 {
+.apps-name {
     text-align: center;
+    margin: 0px 0px 10px 0px;
 }
 
 .weather-container {
@@ -244,6 +246,7 @@ textarea {
 
 #today_date {
     text-align: center;
+    margin: 10px 0px 10px 0px;
 }
 
 .apps-widget {
