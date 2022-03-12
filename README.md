@@ -1,5 +1,5 @@
 # {Drag & Drop} To - Do Web App
-https://raw.githubusercontent.com/millerm30/todo/main/todologo.jpg
+![App Logo](todologo.jpg)
 ###### Drag and Drop to do note web app
 ###### Includes local date and time
 ###### Will add weather API 
