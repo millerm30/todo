@@ -33,6 +33,10 @@ window.addEventListener('load', () => {
         } else {
           document.querySelector('#rainFall').hidden = true;
         }
+        const sunRise = response.data.sys.sunrise;
+        const riseTime = new Date(sunRise * 1000).toLocaleTimeString();
+        const sunSet = response.data.sys.sunset;
+        const setTime = new Date(sunSet * 1000).toLocaleTimeString();
         const humid = response.data.main.humidity;
         const iconImg = document.querySelector('#weatherIcon');
         const weatherIcon = response.data.weather[0].icon;
@@ -41,6 +45,8 @@ window.addEventListener('load', () => {
         document.querySelector('#temp').innerHTML = `${celcius}&deg;C`;
         document.querySelector('#feelsLike').innerHTML = `Feels Like ${feelsLike}&deg;C`;
         document.querySelector('#location').innerHTML = `Location: ${response.data.name}`;
+        document.querySelector(".riseData").innerHTML = `${riseTime}`;
+        document.querySelector(".setData").innerHTML = `${setTime}`;
         document.querySelector('#wind').innerHTML = `Wind Speed: ${windSpeed} km/h`;
         document.querySelector('#humidity').innerHTML = `Humidity: ${humid}%`;
         iconImg.src = iconUrl;

@@ -186,6 +186,24 @@ textarea {
     border-radius: 20px 20px 20px 20px;
 }
 
+#sunTime {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sunRise {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+#sunSet {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+
 #temp {
     font-size: 2.4em;
     margin: 0;
