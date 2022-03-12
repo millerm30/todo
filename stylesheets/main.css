@@ -245,6 +245,14 @@ textarea {
     padding: 5px;
 }
 
+#snowFall {
+    padding: 5px;
+}
+
+#rainFall {
+    padding: 5px;
+}
+
 #weatherIcon {
     display: block;
     margin: 0 auto;
