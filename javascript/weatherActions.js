@@ -22,10 +22,14 @@ window.addEventListener('load', () => {
           document.querySelector('#windGust').hidden = true;
         }
         if (response.data.snow) {
-          const snowFall = response.data.snow['1h'];
-          document.querySelector('#snowFall').innerHTML = `Snow Fall: ${snowFall}`;
-        } else {
-          document.querySelector('#snowFall').hidden = true;
+          const snowFall = response.data.snow['1h'] / 10;
+          if (snowFall <= 1) {
+            document.querySelector('#snowFall').innerHTML = `Snow Fall: < 1cm`;
+          } else if (snowFall > 1) {
+            document.querySelector('#snowFall').innerHTML = `Snow Fall: ${snowFall}cm`;
+          } else {
+            document.querySelector('#snowFall').hidden = true;
+          }
         }
         if (response.data.rain) {
           const rainFall = response.data.rain['1h'];
@@ -45,8 +49,8 @@ window.addEventListener('load', () => {
         document.querySelector('#temp').innerHTML = `${celcius}&deg;C`;
         document.querySelector('#feelsLike').innerHTML = `Feels Like ${feelsLike}&deg;C`;
         document.querySelector('#location').innerHTML = `Location: ${response.data.name}`;
-        document.querySelector(".riseData").innerHTML = `${riseTime}`;
-        document.querySelector(".setData").innerHTML = `${setTime}`;
+        document.querySelector('.riseData').innerHTML = `${riseTime}`;
+        document.querySelector('.setData').innerHTML = `${setTime}`;
         document.querySelector('#wind').innerHTML = `Wind Speed: ${windSpeed} km/h`;
         document.querySelector('#humidity').innerHTML = `Humidity: ${humid}%`;
         iconImg.src = iconUrl;
