@@ -22,10 +22,14 @@ window.addEventListener('load', () => {
           document.querySelector('#windGust').hidden = true;
         }
         if (response.data.snow) {
-          const snowFall = response.data.snow['1h'];
-          document.querySelector('#snowFall').innerHTML = `Snow Fall: ${snowFall}`;
-        } else {
-          document.querySelector('#snowFall').hidden = true;
+          const snowFall = response.data.snow['1h'] / 10;
+          if (snowFall <= 1) {
+            document.querySelector("#snowFall").innerHTML = `Snow Fall: < 1cm`;
+          } else if (snowFall > 1) {
+            document.querySelector("#snowFall").innerHTML = `Snow Fall: ${snowFall}cm`;
+          } else {
+            document.querySelector("#snowFall").hidden = true;
+          }
         }
         if (response.data.rain) {
           const rainFall = response.data.rain['1h'];
