@@ -45,3 +45,43 @@ buttons.forEach((btn) => {
     }
   });
 });
+/*
+const charCodeZero = "0".charCodeAt(0);
+const charCodeNine = "9".charCodeAt(0);
+const charCodeOperationsArray = [
+  "+".charCodeAt(0),
+  "-".charCodeAt(0),
+  "/".charCodeAt(0),
+  "*".charCodeAt(0),
+  ".".charCodeAt(0),
+];
+const charCodeEqual = "=".charCodeAt(0);
+
+function isDigitCode(n) {
+  return n >= charCodeZero && n <= charCodeNine;
+}
+
+function isOperator(n) {
+  return charCodeOperationsArray.includes(n);
+}
+
+document.addEventListener('keydown', (event) => {
+    // when clicked button is not clear button
+    if (isDigitCode(event.key) || isOperator(event.key)) {
+      // To display value on btn press
+      realTimeScreenValue.push(event.key);
+      currentInput.innerHTML = realTimeScreenValue.join('');
+
+      // To evaluate answer in real time
+      if (event.key) {
+        answerScreen.innerHTML = eval(realTimeScreenValue.join(''));
+      }
+    }
+
+    // When key is evaluate button
+    if (charCodeEqual) {
+      answerScreen.className = 'currentInput';
+      currentInput.className = 'answerScreen';
+    }
+  });
+*/
