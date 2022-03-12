@@ -24,11 +24,11 @@ window.addEventListener('load', () => {
         if (response.data.snow) {
           const snowFall = response.data.snow['1h'] / 10;
           if (snowFall <= 1) {
-            document.querySelector("#snowFall").innerHTML = `Snow Fall: < 1cm`;
+            document.querySelector('#snowFall').innerHTML = `Snow Fall: < 1cm`;
           } else if (snowFall > 1) {
-            document.querySelector("#snowFall").innerHTML = `Snow Fall: ${snowFall}cm`;
+            document.querySelector('#snowFall').innerHTML = `Snow Fall: ${snowFall}cm`;
           } else {
-            document.querySelector("#snowFall").hidden = true;
+            document.querySelector('#snowFall').hidden = true;
           }
         }
         if (response.data.rain) {
