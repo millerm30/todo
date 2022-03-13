@@ -127,6 +127,7 @@ textarea {
     resize: none;
     white-space: pre-wrap;
     margin-bottom: 20px;
+    margin-top: 8px;
 }
 
 #note_name {
@@ -416,5 +417,8 @@ textarea {
         'complete complete complete'
         'weather weather weather'
         'footer footer footer';
+    }
+    #note_name {
+        width: 100%;
     }
 }
