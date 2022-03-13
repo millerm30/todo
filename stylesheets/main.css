@@ -213,7 +213,15 @@ textarea {
     padding: 5px 10px;
 }
 
-.riseName, .setName, .windName, .gustName, .humidityName, .pressureName, .snowName, .rainName, .locationName {
+.riseName, 
+.setName, 
+.windName, 
+.gustName, 
+.humidityName, 
+.pressureName, 
+.snowName, 
+.rainName, 
+.locationName {
     font-weight: 600;
 }
 
