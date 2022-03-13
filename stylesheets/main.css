@@ -212,6 +212,10 @@ textarea {
     padding: 5px 10px;
 }
 
+.riseName, .setName, .windName, .gustName, .humidityName, .pressureName, .snowName, .rainName, .locationName {
+    font-weight: 600;
+}
+
 #sunSet {
     display: flex;
     flex-direction: column;
@@ -247,13 +251,14 @@ textarea {
 }
 
 #location {
+    display: flex;
+    flex-direction: column;
     padding: 5px;
 }
 
 #comfort {
     display: flex;
     justify-content: space-between;
-    
 }
 
 #humidity {
