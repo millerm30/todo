@@ -23,12 +23,14 @@ window.addEventListener('load', () => {
         }
         if (response.data.snow) {
           const snowFall = response.data.snow['1h'] / 10;
+          document.querySelector('.snowName').innerHTML = 'Snow Fall'
           document.querySelector('.snowData').innerHTML = `${snowFall}cm`;
           } else {
             document.querySelector('#snowFall').hidden = true;
           }
         if (response.data.rain) {
           const rainFall = response.data.rain['1h'];
+          document.querySelector('.rainName').innerHTML = 'Rain Fall'
           document.querySelector('.rainData').innerHTML = `${rainFall}mm`;
         } else {
           document.querySelector('#rainFall').hidden = true;
