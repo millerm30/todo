@@ -218,6 +218,23 @@ textarea {
     padding: 5px 10px;
 }
 
+#wind {
+    display: flex;
+    justify-content: space-between;
+}
+
+#windSpeed {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+#windGust {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
 #temp {
     font-size: 2.4em;
     margin: 0;
@@ -233,24 +250,39 @@ textarea {
     padding: 5px;
 }
 
-#wind {
-    padding: 5px;
-}
-
-#windGust {
-    padding: 5px;
+#comfort {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 #humidity {
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
 }
 
-#snowFall {
-    padding: 5px;
+#pressure {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+#precip {
+    display: flex;
+    justify-content: space-between;
+}
+
+#snpwFall {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
 }
 
 #rainFall {
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
 }
 
 #weatherIcon {
