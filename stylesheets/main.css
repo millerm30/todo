@@ -127,6 +127,7 @@ textarea {
     resize: none;
     white-space: pre-wrap;
     margin-bottom: 20px;
+    margin-top: 8px;
 }
 
 #note_name {
@@ -212,7 +213,36 @@ textarea {
     padding: 5px 10px;
 }
 
+.riseName,
+.setName,
+.windName,
+.gustName,
+.humidityName,
+.pressureName,
+.snowName,
+.rainName,
+.locationName {
+    font-weight: 600;
+}
+
 #sunSet {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+#wind {
+    display: flex;
+    justify-content: space-between;
+}
+
+#windSpeed {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+#windGust {
     display: flex;
     flex-direction: column;
     padding: 5px 10px;
@@ -230,27 +260,43 @@ textarea {
 }
 
 #location {
+    display: flex;
+    flex-direction: column;
     padding: 5px;
 }
 
-#wind {
-    padding: 5px;
-}
-
-#windGust {
-    padding: 5px;
+#comfort {
+    display: flex;
+    justify-content: space-between;
 }
 
 #humidity {
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+#pressure {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+#precip {
+    display: flex;
+    justify-content: space-between;
 }
 
 #snowFall {
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
 }
 
 #rainFall {
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
 }
 
 #weatherIcon {
@@ -379,5 +425,9 @@ textarea {
             'complete complete complete'
             'weather weather weather'
             'footer footer footer';
+    }
+
+    #note_name {
+        width: 100%;
     }
 }
