@@ -141,33 +141,31 @@ textarea {
 .button_submit {
     float: right;
     text-align: center;
-    vertical-align: middle;
-    padding: 0px 10px;
+    padding: 10px 10px;
     cursor: pointer;
     margin: 5px;
-    background-color: #f8f8f8;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    background-color: #4267B3;
+    border: none;
+    border-radius: 20px;
     height: 28px;
-    line-height: 1.6em;
+    line-height: .6em;
+    color: #fff;
 }
 
 .button_reset {
     float: right;
     text-align: center;
-    vertical-align: middle;
-    padding: 0px 10px;
+    padding: 10px 10px;
     cursor: pointer;
     margin: 5px;
-    background-color: #f8f8f8;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    background-color: #4267B3;
+    border: none;
+    border-radius: 20px;
     height: 28px;
-    line-height: 1.6em;
+    line-height: .6em;
+    color: #fff;
 }
 
-.button_submit:hover, 
-.button_reset:hover,
 #note_name:hover,
 #status:hover,
 #textarea:hover {
