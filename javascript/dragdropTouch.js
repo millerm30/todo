@@ -1,3 +1,5 @@
+// Code by Bernardo Castilho: https://github.com/Bernardo-Castilho/dragdroptouch
+
 var DragDropTouch;
 (function (DragDropTouch_1) {
   "use strict";
