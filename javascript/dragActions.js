@@ -1,5 +1,7 @@
 'use strict';
 
+let target;
+
 const dragStart = (target) => {
   target.classList.add('dragging');
 };
@@ -22,16 +24,15 @@ const drag = (event) => {
 };
 
 const drop = (event) => {
-  document
-    .querySelectorAll('.column')
-    .forEach((column) => column.classList.remove('drop'));
-  document
-    .querySelector(`[data-id='${event.dataTransfer.getData('text/plain')}']`)
-    .remove();
-
+  document.querySelectorAll('.column').forEach((column) => column.classList.remove('drop'));
+  document.querySelector(`[data-id='${event.dataTransfer.getData('text/plain')}']`).remove();
   event.preventDefault();
-  event.currentTarget.innerHTML =
-    event.currentTarget.innerHTML + event.dataTransfer.getData('text/html');
+  event.currentTarget.innerHTML = event.currentTarget.innerHTML + event.dataTransfer.getData('text/html');
+  if (event.target.className == 'drop') {
+    event.target.style.background = '';
+    target.parentNode.removeChild(target);
+    event.target.appendChild(target);
+  }
 };
 
 const allowDrop = (event) => {
