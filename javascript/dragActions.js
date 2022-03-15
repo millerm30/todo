@@ -1,51 +1,57 @@
-'use strict';
+"use strict";
 
-let dragged;
+let target;
 
-document.addEventListener('drag', function (event) {}, false);
+const dragStart = (target) => {
+  target.classList.add("dragging");
+};
 
-document.addEventListener('dragstart', function (event) {
-    dragged = event.target;
-    event.target.style.opacity = 0.5;
-  },
-  false
-);
+const dragEnd = (target) => {
+  target.classList.remove("dragging");
+};
 
-document.addEventListener('dragend', function (event) {
-    event.target.style.opacity = '';
-  },
-  false
-);
+const dragEnter = (event) => {
+  event.currentTarget.classList.add("drop");
+};
 
-document.addEventListener('dragover', function (event) {
-    event.preventDefault();
-  },
-  false
-);
+const dragLeave = (event) => {
+  event.currentTarget.classList.remove("drop");
+};
 
-document.addEventListener('dragenter', function (event) {
-    if (event.target.className == 'dropzone') {
-      event.target.style.background = '';
-    }
-  },
-  false
-);
+const drag = (event) => {
+  event.dataTransfer.setData("text/html", event.currentTarget.outerHTML);
+  event.dataTransfer.setData("text/plain", event.currentTarget.dataset.id);
+};
 
-document.addEventListener('dragleave', function (event) {
-    if (event.target.className == 'dropzone') {
-      event.target.style.background = '';
-    }
-  },
-  false
-);
+const drop = (event) => {
+  document
+    .querySelectorAll(".column")
+    .forEach((column) => column.classList.remove("drop"));
+  document
+    .querySelector(`[data-id='${event.dataTransfer.getData("text/plain")}']`)
+    .remove();
+  event.preventDefault();
+  event.currentTarget.innerHTML =
+    event.currentTarget.innerHTML + event.dataTransfer.getData("text/html");
+};
 
-document.addEventListener('drop', function (event) {
-    event.preventDefault();
-    if (event.target.className == 'dropzone') {
-      event.target.style.background = '';
-      dragged.parentNode.removeChild(dragged);
-      event.target.appendChild(dragged);
-    }
-  },
-  false
-);
+const allowDrop = (event) => {
+  event.preventDefault();
+};
+
+document.querySelectorAll(".column").forEach((column) => {
+  column.addEventListener("dragenter", dragEnter);
+  column.addEventListener("dragleave", dragLeave);
+});
+
+document.addEventListener("dragstart", (e) => {
+  if (e.target.className.includes("card")) {
+    dragStart(e.target);
+  }
+});
+
+document.addEventListener("dragend", (e) => {
+  if (e.target.className.includes("card")) {
+    dragEnd(e.target);
+  }
+});

@@ -30,21 +30,21 @@ html {
     border-radius: 20px;
 }
 
-#todo-content {
+.todo-content {
     grid-area: todo;
     background-color: #E9EbEE;
     border-radius: 20px;
     min-height: 300px;
 }
 
-#inprogress-content {
+.inprogress-content {
     grid-area: progress;
     background-color: #E9EbEE;
     border-radius: 20px;
     min-height: 300px;
 }
 
-#completed-content {
+.completed-content {
     grid-area: complete;
     background-color: #E9EbEE;
     border-radius: 20px;
@@ -365,7 +365,7 @@ textarea {
 
 /* To-Do Interior Settings */
 
-#todo-content h3 {
+.todo-content h3 {
     text-align: center;
     color: #fff;
     padding: 10px 10px;
@@ -377,7 +377,7 @@ textarea {
 
 /* In-Progress Interior Settings */
 
-#inprogress-content h3 {
+.inprogress-content h3 {
     text-align: center;
     color: #fff;
     padding: 10px 10px;
@@ -389,7 +389,7 @@ textarea {
 
 /* Completed Interior Settings */
 
-#completed-content h3 {
+.completed-content h3 {
     text-align: center;
     color: #fff;
     padding: 10px 10px;
