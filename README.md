@@ -49,3 +49,9 @@ const config = {
 
 - [@millerm30](https://www.github.com/millerm30)
 
+
+## Acknowledgements
+
+Pollyfill DragDropTouch for Android Mobile compatability provided by [Bernardo-Castilho](https://github.com/Bernardo-Castilho/dragdroptouch)
+
+
