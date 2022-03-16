@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
           const windGust = Math.round(parseFloat(response.data.wind.gust * 3.6));
           document.querySelector('.gustData').innerHTML = `${windGust} km/h`;
           } else {
-          document.querySelector('.gustData').hidden = true;
+          document.querySelector('#windGust').hidden = true;
         }
         if (response.data.snow) {
           const snowFall = response.data.snow['1h'] / 10;
