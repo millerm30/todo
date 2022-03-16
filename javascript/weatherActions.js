@@ -19,21 +19,21 @@ window.addEventListener('load', () => {
           const windGust = Math.round(parseFloat(response.data.wind.gust * 3.6));
           document.querySelector('.gustData').innerHTML = `${windGust} km/h`;
           } else {
-          document.querySelector('#windGust').hidden = true;
+          document.querySelector('#windGust').remove();
         }
         if (response.data.snow) {
           const snowFall = response.data.snow['1h'] / 10;
           document.querySelector('.snowName').innerHTML = 'Snow Fall'
           document.querySelector('.snowData').innerHTML = `${snowFall}cm`;
           } else {
-            document.querySelector('#snowFall').hidden = true;
+            document.querySelector('#snowFall').remove();
           }
         if (response.data.rain) {
           const rainFall = response.data.rain['1h'];
           document.querySelector('.rainName').innerHTML = 'Rain Fall'
           document.querySelector('.rainData').innerHTML = `${rainFall}mm`;
         } else {
-          document.querySelector('#rainFall').hidden = true;
+          document.querySelector('#rainFall').remove();
         }
         const sunRise = response.data.sys.sunrise;
         const riseTime = new Date(sunRise * 1000).toLocaleTimeString();
