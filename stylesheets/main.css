@@ -464,10 +464,6 @@ textarea {
     padding: 10px;
 }
 
-.contactInfo i {
-    margin-right: 5px;
-}
-
 /* @Media Inquires mobile settings*/
 
 @media screen and (max-width: 600px) {
