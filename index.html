@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet">
         <link href="stylesheets/normalize.css" rel="stylesheet">
         <link href="stylesheets/main.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"> </script>
         <script src="javascript/config.js"></script>
     </head>
@@ -108,8 +109,23 @@
         <div class="completed-content" ondrop="drop(event)" ondragover="allowDrop(event)">
             <h3>Completed</h3>
         </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Contact Info</h2>
+                <h4>Designed by Michael Miller</h4>
+                <a href="http://www.github.com/millerm30" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+                <a href="http://www.twitter.com/millerm30" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                <a href="https://linkedin.com/in/michael-miller-0aa2bb229" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            </div>
+        </div>
         <div class="footer-content">
-            <p>&copy;&nbsp;2022, Design By Michael Miller</p>
+            <span class="copyInfo">
+                <p>&copy;&nbsp;2022, Design By Michael Miller</p>
+            </span>
+            <span class="contactInfo">
+                <i class="fa-solid fa-address-card fa-xl" id="myBtn"></i>
+            </span>
         </div>        
         <script src="javascript/noteActions.js"></script>
         <script src="javascript/dateActions.js"></script>
@@ -117,5 +133,6 @@
         <script src="javascript/dragdropTouch.js"></script>
         <script src="javascript/widgetActions.js"></script>
         <script src="javascript/weatherActions.js"></script>
+        <script src="javascript/modalcontactActions.js"></script>
     </body>
 </html>
