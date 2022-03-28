@@ -423,6 +423,16 @@ textarea {
     
 }
 
+.modal-content h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .close {
     color: #aaa;
     float: right;
