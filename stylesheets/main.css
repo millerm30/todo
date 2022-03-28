@@ -399,15 +399,69 @@ textarea {
     margin: 0;
 }
 
+/* Contact Info Modal Settings */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 2px #ccc;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal i {
+    padding: 10px;
+}
+
+.modal a,
+.modal a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
 /* Footer Interior Settings */
 
 .footer-content {
     text-align: center;
     color: #ffffff;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-content p {
     margin: 0;
+    padding: 10px;
+}
+
+.contactInfo {
     padding: 10px;
 }
 
