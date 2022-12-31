@@ -180,7 +180,7 @@ textarea {
 
 #calculatorImage {
     cursor: pointer;
-    transition: transform .5s;
+    transition: all 0.5s ease-in-out;
 }
 
 #calculatorImage:hover {
@@ -444,6 +444,11 @@ textarea {
 
 .modal i {
     padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal i:hover {
+    transform: scale(1.5);
 }
 
 .modal a,
