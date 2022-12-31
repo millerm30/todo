@@ -32,6 +32,12 @@ const drop = (event) => {
   event.preventDefault();
   event.currentTarget.innerHTML =
     event.currentTarget.innerHTML + event.dataTransfer.getData('text/html');
+  
+  const noteId = event.dataTransfer.getData('text/plain');
+  const notes = JSON.parse(localStorage.getItem('notes')) || [];
+  const note = notes.find(note => note.id === noteId);
+  note.category = event.currentTarget.dataset.category;
+  localStorage.setItem('notes', JSON.stringify(notes));
 };
 
 const allowDrop = (event) => {
