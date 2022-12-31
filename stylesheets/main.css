@@ -178,6 +178,15 @@ textarea {
 
 /* App Widget Settings */
 
+#calculatorImage {
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+#calculatorImage:hover {
+    transform: scale(1.5);
+}
+
 .apps-name {
     text-align: center;
     margin: 0px 0px 10px 0px;
@@ -315,10 +324,6 @@ textarea {
 .apps-widget {
     display: flex;
     justify-content: center;
-}
-
-.apps-widget img:hover {
-    transform: scale(1.5);
 }
 
 /* Draggable Card Settings */
@@ -463,6 +468,10 @@ textarea {
 
 .contactInfo {
     padding: 10px;
+}
+
+.contactInfo:hover {
+    cursor: pointer;
 }
 
 /* @Media Inquires mobile settings*/
