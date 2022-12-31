@@ -94,6 +94,9 @@ function displaySavedNotes() {
       default:
         targetColumn = document.querySelector(".todo-content");
     }
+    if (note.category === "completed") {
+      h4Head.style.textDecoration = "line-through";
+    }
     targetColumn.appendChild(div);
     div.append(h4Head, para);
   });

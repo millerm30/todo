@@ -39,7 +39,7 @@ const drop = (event) => {
   if (note) {
     note.category = event.currentTarget.dataset.category;
     localStorage.setItem("notes", JSON.stringify(notes));
-  }
+  };
 };
 
 const allowDrop = (event) => {
