@@ -23,6 +23,11 @@ function uuidv4() {
 
 function onSubmit(e) {
   e.preventDefault();
+  if (nameInput.value === '' || noteInput.value === '') {
+    msg.innerHTML = 'Please fill in all fields';
+    return;
+  };
+
   const div = document.createElement("div");
   div.className += "card";
   div.setAttribute("draggable", "true");
