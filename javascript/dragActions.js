@@ -16,28 +16,30 @@ const dragLeave = (event) => {
   event.currentTarget.classList.remove('drop');
 };
 
-const drag = (event) => {
-  event.dataTransfer.setData('text/html', event.currentTarget.outerHTML);
-  event.dataTransfer.setData('text/plain', event.currentTarget.dataset.id);
-};
+function drag(event) {
+  event.dataTransfer.setData("text/plain", event.target.dataset.id);
+  event.dataTransfer.setData("text/html", event.target.outerHTML);
+}
 
 const drop = (event) => {
   document
-    .querySelectorAll('.column')
-    .forEach((column) => column.classList.remove('drop'));
-  document
-    .querySelector(`[data-id='${event.dataTransfer.getData('text/plain')}']`)
-    .remove();
-
+    .querySelectorAll(".column")
+    .forEach((column) => column.classList.remove("drop"));
+  const noteElement = document.querySelector(
+    `[data-id='${event.dataTransfer.getData("text/plain")}']`
+  );
+  noteElement.parentNode.removeChild(noteElement);
   event.preventDefault();
   event.currentTarget.innerHTML =
-    event.currentTarget.innerHTML + event.dataTransfer.getData('text/html');
-  
-  const noteId = event.dataTransfer.getData('text/plain');
-  const notes = JSON.parse(localStorage.getItem('notes')) || [];
-  const note = notes.find(note => note.id === noteId);
-  note.category = event.currentTarget.dataset.category;
-  localStorage.setItem('notes', JSON.stringify(notes));
+    event.currentTarget.innerHTML + noteElement.outerHTML;
+
+  const noteId = event.dataTransfer.getData("text/plain");
+  const notes = JSON.parse(localStorage.getItem("notes")) || [];
+  const note = notes.find((note) => note.id === noteId);
+  if (note) {
+    note.category = event.currentTarget.dataset.category;
+    localStorage.setItem("notes", JSON.stringify(notes));
+  }
 };
 
 const allowDrop = (event) => {
